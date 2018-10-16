@@ -1,9 +1,3 @@
-
-
-
-
-
-
 /******************************************************************************
   Title          : main.cpp
   Author         : FrancisXIrizarry
@@ -33,6 +27,7 @@
  #include <cstring>
  #include <sstream>
 
+
   using namespace std;
  /******************************************************************************/
  // The syntax of the output function that must be used to print an oddity.
@@ -42,17 +37,26 @@ typedef ostream& (*output_function) ( ostream & out);
                         All Function Definitions
  ******************************************************************************/
 //typedef ostream& (*output_function) (const ostream & out);
-ostream& lashana29_oddity(ostream & out);
+
+
+
+
+
+ostream& FrancisXIrizarry_oddity(ostream & out);
+
 
 int main(int argc, char* argv[] )
 {
-	 output_function lashana29;
-         lashana29 = lashana29_oddity;
-	 lashana29(cout);
-         return 0;
+	output_function FrancisXIrizarry;
+   	FrancisXIrizarry = FrancisXIrizarry_oddity;
+        FrancisXIrizarry(cout);
+        return 0;
+
+
 } 
 
-ostream& lashana29_oddity(ostream & out){
+
+ostream& FrancisXIrizarry_oddity(ostream & out){
    out<<"Why do they put Braille dots on the keypad of the drive-up ATM?"<<endl;
 	
    return out;
