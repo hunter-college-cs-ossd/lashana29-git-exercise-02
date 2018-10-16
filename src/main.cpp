@@ -57,7 +57,7 @@ int main(int argc, char* argv[] )
 
 
 ostream& FrancisXIrizarry_oddity(ostream & out){
-   out<<"Why do they put Braille dots on the keypad of the drive-up ATM?"<<endl;
+   out<<"If you're in a vehicle going the speed of light, what happens when you turn on the headlights?"<<endl;
 	
    return out;
 }
