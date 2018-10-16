@@ -46,7 +46,9 @@ ostream& lashana29_oddity(ostream & out);
 
 int main(int argc, char* argv[] )
 {
-	 lashana29_oddity(cout);
+	 output_function lashana29;
+         lashana29 = lashana29_oddity;
+	 lashana29(cout);
          return 0;
 } 
 
@@ -55,20 +57,6 @@ ostream& lashana29_oddity(ostream & out){
 	
    return out;
 }
-/***********************************
-Original Design, Can be updated Easily. 
-***********************************/
-
-/*
-ostream& lashana29_oddity(ostream & out);
-
-ostream& lashana29_oddity(ostream & out){
-   out<<"Why do they put Braille dots on the keypad of the drive-up ATM?"<<endl;
-	
-   return out;
-}
-*/
-
 
 
 
