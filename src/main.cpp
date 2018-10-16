@@ -84,9 +84,19 @@ int main(int argc, char* argv[] )
 } 
 
 
+/***********************************
+Original Design, Can be updated Easily. 
+***********************************/
 
+/*
+ostream& lashana29_oddity(ostream & out);
 
-
+ostream& lashana29_oddity(ostream & out){
+   out<<"Why do they put Braille dots on the keypad of the drive-up ATM?"<<endl;
+	
+   return out;
+}
+*/
 
 
 
