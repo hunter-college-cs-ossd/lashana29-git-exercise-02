@@ -40,14 +40,15 @@ typedef ostream& (*output_function) ( ostream & out);
                         
                       
  ******************************************************************************/
-//typedef ostream& (*output_function) (const ostream & out);
 
+ostream& display_summary(ostream& out);
 ostream& FrancisXIrizarry_oddity(ostream & out);
 ostream& anupamdas104_oddity(ostream & out);
 ostream& shadow12ac_oddity(ostream & out);
 
 int main(int argc, char* argv[] )
 {
+	display_summary(cout);
 	output_function FrancisXIrizarry;
   FrancisXIrizarry = FrancisXIrizarry_oddity;
   FrancisXIrizarry(cout);
@@ -56,9 +57,15 @@ int main(int argc, char* argv[] )
   return 0;
 } 
 
+ostream& display_summary(ostream& out) {
+	out << "This is a collection of strange but true facts." << endl;
+	return out;
+}
+
 ostream& FrancisXIrizarry_oddity(ostream & out) {
-   out<< "If you're in a vehicle going the speed of light, what happens when you turn on the headlights?" << endl;
-   return out;
+  out << "If you're in a vehicle going the speed of light, what happens when ";
+	out << "you turn on the headlights?" << endl;
+  return out;
 }
 
 ostream& anupamdas104_oddity(ostream & out) {
