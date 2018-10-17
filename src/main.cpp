@@ -1,10 +1,10 @@
 /******************************************************************************
   Title          : main.cpp
-  Author         : 
+  Author         : FrancisXIrizarry
   Created on     : October  7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
-  Usage          : nuttyfact
+  Usage          : ./oddities oddities.txt
   Build with     : g++ -Wall -g -o oddities  main.cpp
   Modifications  :
   Notes:
@@ -14,35 +14,56 @@
   by the output_function typedef defined below. Each function must be 
   named 
        username_oddity
-
-  where username is the GitHub username of its author.
+   where username is the GitHub username of its author.
   For example, 
       output_function  stewartweiss_oddity;
-
-  Oddities are found in the file "oddities.txt" in the project source directory
+   Oddities are found in the file "oddities.txt" in the project source directory
  
 ******************************************************************************/
+ #include <iostream>
+ #include <fstream>
+ #include <cstdlib>
+ #include <cstdio>
+ #include <cstring>
+ #include <sstream>
 
-#include <iostream>
-#include <fstream>
-#include <cstdlib>
-#include <cstdio>
-#include <cstring>
-#include <sstream>
 
-using namespace std;
+  using namespace std;
+ /******************************************************************************/
+ // The syntax of the output function that must be used to print an oddity.
+typedef ostream& (*output_function) ( ostream & out);
+ /******************************************************************************
+        
+                        All Function Definitions
+ ******************************************************************************/
+//typedef ostream& (*output_function) (const ostream & out);
 
-/******************************************************************************/
+
 
 // The syntax of the output function that must be used to print an oddity.
 typedef ostream& (*output_function) (ostream & out);
 
+ostream& FrancisXIrizarry_oddity(ostream & out);
 
-/******************************************************************************
-        
-                        All Function Definitions
 
-******************************************************************************/
+int main(int argc, char* argv[] )
+{
+	output_function FrancisXIrizarry;
+   	FrancisXIrizarry = FrancisXIrizarry_oddity;
+        FrancisXIrizarry(cout);
+        return 0;
+
+
+} 
+
+
+ostream& FrancisXIrizarry_oddity(ostream & out){
+   out<<"If you're in a vehicle going the speed of light, what happens when you turn on the headlights?"<<endl;
+	
+   return out;
+}
+
+
 
 
 
@@ -51,12 +72,8 @@ ostream& anupamdas104_oddity(ostream & out){
 	return out;
 }
 
-int main(int argc, char* argv[] )
-{
 
     // Calls to output functions
 	anupamdas104_oddity(cout);
 
 
-    return 0;
-}
