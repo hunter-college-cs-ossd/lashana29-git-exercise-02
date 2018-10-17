@@ -40,7 +40,8 @@ typedef ostream& (*output_function) ( ostream & out);
 
 
 
-
+// The syntax of the output function that must be used to print an oddity.
+typedef ostream& (*output_function) (ostream & out);
 
 ostream& FrancisXIrizarry_oddity(ostream & out);
 
@@ -66,10 +67,13 @@ ostream& FrancisXIrizarry_oddity(ostream & out){
 
 
 
+ostream& anupamdas104_oddity(ostream & out){
+	out << "Why are there interstate highways in Hawaii? \n";
+	return out;
+}
 
 
-
-
-
+    // Calls to output functions
+	anupamdas104_oddity(cout);
 
 
