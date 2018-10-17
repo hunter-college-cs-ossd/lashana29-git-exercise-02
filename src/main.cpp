@@ -42,8 +42,14 @@ typedef ostream& (*output_function) ( ostream & out);
  ******************************************************************************/
 
 ostream& display_summary(ostream& out);
+
 ostream& FrancisXIrizarry_oddity(ostream & out);
-ostream& anupamdas104_oddity(ostream & out);
+
+ostream& anupamdas104_oddity(ostream & out) {
+	out << "Why are there interstate highways in Hawaii? \n";
+	return out;
+}
+
 ostream& shadow12ac_oddity(ostream & out);
 
 int main(int argc, char* argv[] )
@@ -52,8 +58,8 @@ int main(int argc, char* argv[] )
 	output_function FrancisXIrizarry;
   FrancisXIrizarry = FrancisXIrizarry_oddity;
   FrancisXIrizarry(cout);
-  shadow12ac_oddity(cout);
 	anupamdas104_oddity(cout);
+  shadow12ac_oddity(cout);
   return 0;
 } 
 
@@ -66,11 +72,6 @@ ostream& FrancisXIrizarry_oddity(ostream & out) {
   out << "If you're in a vehicle going the speed of light, what happens when ";
 	out << "you turn on the headlights?" << endl;
   return out;
-}
-
-ostream& anupamdas104_oddity(ostream & out) {
-	out << "Why are there interstate highways in Hawaii? \n";
-	return out;
 }
 
 ostream& shadow12ac_oddity(ostream & out) {
