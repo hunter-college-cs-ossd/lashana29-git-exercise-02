@@ -35,7 +35,7 @@ using namespace std;
 /******************************************************************************/
 
 // The syntax of the output function that must be used to print an oddity.
-typedef ostream& (*output_function) (const ostream & out);
+typedef ostream& (*output_function) (ostream & out);
 
 
 /******************************************************************************
@@ -46,14 +46,16 @@ typedef ostream& (*output_function) (const ostream & out);
 
 
 
-
-
+ostream& anupamdas104_oddity(ostream & out){
+	out << "Why are there interstate highways in Hawaii? \n";
+	return out;
+}
 
 int main(int argc, char* argv[] )
 {
 
     // Calls to output functions
-
+	anupamdas104_oddity(cout);
 
 
     return 0;
