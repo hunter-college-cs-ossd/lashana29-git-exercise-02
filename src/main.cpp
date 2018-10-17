@@ -43,7 +43,7 @@ typedef ostream& (*output_function) ( ostream & out);
                         All Function Definitions
 
 ******************************************************************************/
-ostream& lashana29_oddity(ostream & out);
+ostream& shadow12ac_oddity(ostream & out);
 
 
 
@@ -53,13 +53,13 @@ int main(int argc, char* argv[] )
 {
 
     // Calls to output functions
-	lashana29_oddity(cout);
+	shadow12ac_oddity(cout);
 
 
     return 0;
 }
 
-ostream& lashana29_oddity(ostream & out){
+ostream& shadow12ac_oddity(ostream & out){
 	out << "Why is it that when you're driving and looking for an address, you turn down the volume on the radio?"  << endl;
 	
 	return out;
